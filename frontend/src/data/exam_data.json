@@ -1,0 +1,246 @@
+{
+  "examTitle": "GATE Mock Test",
+  "duration": 180,
+  "questions": [
+    {
+      "id": 1,
+      "imagePath": "/output_images/q_1.png",
+      "type": "MSQ",
+      "marks": 1.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "B;C;D"
+    },
+    {
+      "id": 2,
+      "imagePath": "/output_images/q_2.png",
+      "type": "NAT",
+      "marks": 1.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "-6"
+    },
+    {
+      "id": 3,
+      "imagePath": "/output_images/q_3.png",
+      "type": "MCQ",
+      "marks": 1.0,
+      "negativeMarks": 0.33,
+      "correctAnswer": "C"
+    },
+    {
+      "id": 4,
+      "imagePath": "/output_images/q_4.png",
+      "type": "MSQ",
+      "marks": 1.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;D"
+    },
+    {
+      "id": 5,
+      "imagePath": "/output_images/q_5.png",
+      "type": "MCQ",
+      "marks": 1.0,
+      "negativeMarks": 0.33,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 6,
+      "imagePath": "/output_images/q_6.png",
+      "type": "MCQ",
+      "marks": 1.0,
+      "negativeMarks": 0.33,
+      "correctAnswer": "C"
+    },
+    {
+      "id": 7,
+      "imagePath": "/output_images/q_7.png",
+      "type": "NAT",
+      "marks": 1.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "0.67"
+    },
+    {
+      "id": 8,
+      "imagePath": "/output_images/q_8.png",
+      "type": "MCQ",
+      "marks": 1.0,
+      "negativeMarks": 0.33,
+      "correctAnswer": "A"
+    },
+    {
+      "id": 9,
+      "imagePath": "/output_images/q_9.png",
+      "type": "MCQ",
+      "marks": 1.0,
+      "negativeMarks": 0.33,
+      "correctAnswer": "A"
+    },
+    {
+      "id": 10,
+      "imagePath": "/output_images/q_10.png",
+      "type": "NAT",
+      "marks": 1.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "12"
+    },
+    {
+      "id": 11,
+      "imagePath": "/output_images/q_11.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 12,
+      "imagePath": "/output_images/q_12.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 13,
+      "imagePath": "/output_images/q_13.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;B;C;D"
+    },
+    {
+      "id": 14,
+      "imagePath": "/output_images/q_14.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 15,
+      "imagePath": "/output_images/q_15.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;B;D"
+    },
+    {
+      "id": 16,
+      "imagePath": "/output_images/q_16.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "C"
+    },
+    {
+      "id": 17,
+      "imagePath": "/output_images/q_17.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "B;C"
+    },
+    {
+      "id": 18,
+      "imagePath": "/output_images/q_18.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "C"
+    },
+    {
+      "id": 19,
+      "imagePath": "/output_images/q_19.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 20,
+      "imagePath": "/output_images/q_20.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;B"
+    },
+    {
+      "id": 21,
+      "imagePath": "/output_images/q_21.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 22,
+      "imagePath": "/output_images/q_22.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;B"
+    },
+    {
+      "id": 23,
+      "imagePath": "/output_images/q_23.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;C"
+    },
+    {
+      "id": 24,
+      "imagePath": "/output_images/q_24.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "B;D"
+    },
+    {
+      "id": 25,
+      "imagePath": "/output_images/q_25.png",
+      "type": "NAT",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "3"
+    },
+    {
+      "id": 26,
+      "imagePath": "/output_images/q_26.png",
+      "type": "NAT",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "9"
+    },
+    {
+      "id": 27,
+      "imagePath": "/output_images/q_27.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "C"
+    },
+    {
+      "id": 28,
+      "imagePath": "/output_images/q_28.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "B"
+    },
+    {
+      "id": 29,
+      "imagePath": "/output_images/q_29.png",
+      "type": "MSQ",
+      "marks": 2.0,
+      "negativeMarks": 0.0,
+      "correctAnswer": "A;B"
+    },
+    {
+      "id": 30,
+      "imagePath": "/output_images/q_30.png",
+      "type": "MCQ",
+      "marks": 2.0,
+      "negativeMarks": 0.67,
+      "correctAnswer": "A"
+    }
+  ]
+}
