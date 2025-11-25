@@ -13,11 +13,12 @@ export const ExamProvider = ({ children }) => {
     const [timeLeft, setTimeLeft] = useState(0);
     const [examTitle, setExamTitle] = useState('');
     const [isExamActive, setIsExamActive] = useState(false);
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
     // Load Exam Data
     const fetchExam = async () => {
         try {
-            const response = await fetch('http://localhost:8000/exam-data');
+            const response = await fetch(`${API_URL}/exam-data`);
             if (!response.ok) throw new Error('Failed to fetch exam data');
             const data = await response.json();
 

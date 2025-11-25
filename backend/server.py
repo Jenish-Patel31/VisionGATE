@@ -84,7 +84,7 @@ async def get_exam_data():
     # So we should replace /output_images/ with http://localhost:8000/images/
     # Or just /images/ if using relative paths in frontend (but frontend is on port 5173)
     
-    base_url = "http://localhost:8000"
+    base_url = os.getenv("API_URL", "http://localhost:8000")
     
     for q in data.get("questions", []):
         if q.get("imagePath"):
