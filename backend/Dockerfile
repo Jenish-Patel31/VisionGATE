@@ -3,7 +3,6 @@ FROM python:3.11-slim
 # Install system dependencies required for pdf2image and opencv
 RUN apt-get update && apt-get install -y \
     poppler-utils \
-    libgl1-mesa-glx \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -17,6 +16,15 @@ COPY . .
 
 # Create necessary directories
 RUN mkdir -p input_pdf output_images data
+
+# Create a non-root user
+RUN useradd -m -u 1000 appuser
+
+# Change ownership of the application directory
+RUN chown -R appuser:appuser /app
+
+# Switch to the non-root user
+USER appuser
 
 # Run the application
 # Use shell form to allow variable expansion of $PORT provided by Render

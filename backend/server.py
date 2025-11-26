@@ -5,6 +5,7 @@ import shutil
 import os
 import subprocess
 import json
+import sys
 
 app = FastAPI()
 
@@ -33,18 +34,27 @@ app.mount("/images", StaticFiles(directory=OUTPUT_DIR), name="images")
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     try:
+        # Clean up input directory
+        for filename in os.listdir(INPUT_DIR):
+            file_path = os.path.join(INPUT_DIR, filename)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print(f"Failed to delete {file_path}. Reason: {e}")
+
         # Save file
         file_path = os.path.join(INPUT_DIR, file.filename)
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
             
         # Run Processor
+        # Run Processor
         # We run it as a subprocess to keep it isolated
-        # Assuming python is in venv
-        python_executable = "venv/bin/python3"
-        if not os.path.exists(python_executable):
-             # Fallback if running outside venv context or different path
-             python_executable = "python3"
+        # Use sys.executable to ensure we use the same python interpreter as the server
+        python_executable = sys.executable
 
         command = [
             python_executable, 
@@ -95,4 +105,4 @@ async def get_exam_data():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app)

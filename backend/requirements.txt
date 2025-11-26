@@ -1,7 +1,7 @@
 pdfplumber
 pdf2image
 Pillow
-opencv-python
+
 fastapi
 uvicorn
 python-multipart
