@@ -31,6 +31,10 @@ os.makedirs(DATA_DIR, exist_ok=True)
 # Mount Static Files
 app.mount("/images", StaticFiles(directory=OUTPUT_DIR), name="images")
 
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "GateMockEngine Backend is Running"}
+
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     try:
